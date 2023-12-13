@@ -1,0 +1,43 @@
+<!--Mohammed Vazhanthodi - 301301707-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Importing the external stylesheets and linking it-->
+    <link rel="stylesheet" href="public/styles/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <!--Created a nav.bhs and called it here so that I dont have to copy paste the same code everytime and in everypage-->
+        {{> nav}}
+        <!--Welcome Message-->
+        <h2 class="welcome">Hey!! Welcome aboard. Get to know about me in this website</h2>
+        <div class="footer bg-light" id="about">
+            <img src="public/images/logoo.png" alt="logo">
+            <!--Moto-->
+            <h3>You can't cross the sea merely by standing and staring at the water</h3>
+
+            <!--Adding social icons and link to the respective handles so that if pressed opens up the link-->
+            <div class="social_icons">
+                <a href="https://www.facebook.com/profile.php?id=100090730422252"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/sufiyan__vt/"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/mohammed-sufiyan-vt-46a736261/"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <!--Adding footer-->
+            <p>Mohammed Vazhanthodi © 2023</p>
+        </div>
+    </div>
+    <!--Importing the bootstrap js module-->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

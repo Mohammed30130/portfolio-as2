@@ -1,0 +1,47 @@
+<!--Mohammed Vazhanthodi - 301301707-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <!--Importing the external stylesheets and linking it-->
+    <link rel="stylesheet" href="public/styles/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+     <div class="container">
+        <!--Created a nav.bhs and called it here so that I dont have to copy paste the same code everytime and in everypage-->
+        {{> nav}}
+         <hr class="mt-5 mb-5">
+        <div class="work_section">
+            <!--Added three projects I have worked on, the roles I played and the link to its github repository..When click it will open the repository-->
+            <h3>I'm proud to have created some new projects during my college days:</h3>
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-4 mt-5">
+                    <a href=""><img src="public/images/bug.jpg" class="bug" alt=""></a>
+                    <h5>Bug Smasher</h5>
+                    <p>Created this game together with my groupmate <br> as a part of second semester assignment</p>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4 mt-5">
+                    <a href=""><img src="public/images/git.png" class="giticon" alt=""></a>
+                    <h5>Image Selling Website</h5>
+                    <p>Created this webpage as a part of my first semester examination</p>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4 mt-5">
+                    <a href=""><img src="public/images/git.png" class="giticon" alt=""></a>
+                    <h5>Image Viewing Website</h5>
+                    <p>Created this webpage as a part of my first semester assignment</p>
+                </div>
+            </div>
+        </div>
+     </div>
+      <!--Adding footer-->
+     <p class="footer">Mohammed Vazhanthodi © 2023</p>
+     <!--Importing the bootstrap js module-->
+     <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

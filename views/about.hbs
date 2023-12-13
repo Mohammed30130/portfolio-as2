@@ -1,0 +1,73 @@
+<!--Mohammed Vazhanthodi - 301301707-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <!--Importing the external stylesheets and linking it-->
+    <link rel="stylesheet" href="public/styles/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+     <div class="container">
+        <!--Created a nav.bhs and called it here so that I dont have to copy paste the same code everytime and in everypage-->
+        {{> nav}}
+        <div class="header_section text-center">
+            <!--Details about me/welcome message to about page-->
+            <h1>I am Full-Time Software Engineering Technecian Student</h1>
+            <p>I learn and code new things everyday and I love what I do.</p>
+        </div>
+
+        <div class="hero_section" id="home">
+            <img src="public/images/myphoto.jpg" alt="hero image" width="400px">
+            <div class="bg-primary p-5 text-center text-light">
+                <!--Short description about me-->
+                <h2>Hi, I’m Mohammed. Pleasure to meet you.</h2>
+                <p>I'm currently a Student here at Centennial College, Canada. I am doing  Diploma in Software Engineering Technician program.
+                    I'm in my Third Semester of the course. I joined the course just after my High School, so I dont really have job experience. I love Learning new things 
+                    and I'm really passionate about programming.Looking forward for a great journey ahead. 
+                </p>
+                <!--Created a download button for downloading my resume-->
+                <a href="public/files/resume.pdf" download="resume" class="download-btn"><i class="fa fa-download"></i> Resume</a>
+            </div>
+        </div>
+        <!--Created a card to show what I do and the languages I use-->
+        <div class="row card_state">
+            <div class="col-12 col-md-4 col-lg-4 mt-5">
+                <div class="card border-0 p-5 shadow">
+                    <div class="card-header bg-white border-0">
+                        <i class="fa fa-code"></i>
+                    </div>
+                    <div class="card-title text-center">
+                        <h4>Front-end Developer</h4>
+                        <p>I like to code things from scratch.</p>
+                    </div>
+
+                    <div class="card-body text-center">
+                        <h5 class="text-primary">Languages I Use:</h5>
+                        <p>JAVA, C#, C++, C, Python, SQL</p>
+                        <hr class="mb-4">
+                        <h6 class="text-primary">Dev Tools:</h6>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Visual Studio</li>
+                            <li class="list-group-item">Spyder</li>
+                            <li class="list-group-item">IntelliJ</li>
+                            <li class="list-group-item">DosBox</li>
+                            <li class="list-group-item">Github</li>
+                            <li class="list-group-item">Oracle</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!--Adding footer-->
+        <p class="footer">Mohammed Vazhanthodi © 2023</p>
+     </div>
+     <!--Importing the bootstrap js module-->
+     <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

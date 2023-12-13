@@ -1,0 +1,51 @@
+<!--Mohammed Vazhanthodi - 301301707-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!--Importing the external stylesheets and linking it-->
+    <link rel="stylesheet" href="public/styles/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <!--Created a nav.bhs and called it here so that I dont have to copy paste the same code everytime and in everypage-->
+        {{> nav}}
+        <hr class="mt-5 mb-5">
+        <!--Created a form for visitors to enter their details and their message to let me know-->
+        <div class="contact_us" id="contact">
+            <form>
+                <h2 class="text-center">Contact Me</h2>
+                <p class="text-center">Let me know what you feel</p>
+                <div class="mb-3">
+                    <label for="username" class="form-label">User name </label>
+                    <input name="user" type="text" class="form-control" placeholder="Type your username here" id="username">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input name="email" type="email" class="form-control" placeholder="abcd@gmail.com" id="exampleInputEmail1"
+                        aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="mb-2">Type your message here...</label>
+                    <div class="form-floating">
+                        <textarea name="msg" class="form-control" 
+                            id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2" ></label>
+                    </div>
+                </div>
+                <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <!--Adding the footer-->
+            <p class="footer">Mohammed Vazhanthodi</p> © 2023</p>
+        </div>
+    </div>
+    <!--Importing bootstrap js module-->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

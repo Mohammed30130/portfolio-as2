@@ -1,0 +1,69 @@
+<!--Mohammed Vazhanthodi - 301301707-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <!--Importing the external stylesheets and linking it-->
+    <link rel="stylesheet" href="public/styles/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <!--Created a nav.bhs and called it here so that I dont have to copy paste the same code everytime and in everypage-->
+        {{> nav}}
+        <div class="service text-center" id="service">
+    <h2>My services</h2>
+    <p>Get to know the services that I provide</p>
+    <!--Created cards to show the services I provide and a short description about it-->
+    <div class="row">
+        <div class="col-12 col-md-4 col-lg-4 mt-5">
+            <div class="card border-0 p-5 shadow">
+                <div class="card-header bg-white border-0">
+                    <img class="img-fluid" src="public/images/serverdev.png" alt="">
+                </div>
+                <div class="card-title text-center">
+                    <h5>Server Development</h5>
+                    <p> Create and develop the server-side logic that handle requests from the client, 
+                        process data, and send responses using programming languages 
+                        like Python, Java, or Node.js.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-4 mt-5">
+            <div class="card border-0 p-5 shadow">
+                <div class="card-header bg-white border-0">
+                    <img class="img-fluid" src="public/images/Data.png" alt="">
+                </div>
+                <div class="card-title text-center">
+                    <h5>Data Management</h5>
+                    <p>Design and manage databases, ensuring data storage, retrieval, and integrity. 
+                        using MySQL, OracleDB, MongoDB, and more.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-4 mt-5">
+            <div class="card border-0 p-5 shadow">
+                <div class="card-header bg-white border-0">
+                    <img class="img-fluid" src="public/images/appdevelopment.png" alt="">
+                </div>
+                <div class="card-title text-center">
+                    <h5>App Development</h5>
+                    <p>Work on the client-side of the app, 
+                        building the user interface using technologies like HTML, CSS, and JavaScript. 
+                        Which is particularly relevant for web and mobile apps.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Adding the footer-->
+    <p class="footer">Mohammed Vazhanthodi © 2023</p>
+    </div>
+    <!--Importing bootstrap js module-->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
